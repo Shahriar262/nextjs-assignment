@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-0 py-4 flex justify-between items-center">
         {/* Logo + Text */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo-2.png" alt="Logo" width={32} height={32} className="w-6 h-6 md:w-8 md:h-8"/>
+          <Image src="/logo3.png" alt="Logo" width={32} height={32} className="w-6 h-6 md:w-8 md:h-8"/>
           <span className="font-bold text-xl text-gray-800">TechHive</span>
         </Link>
 

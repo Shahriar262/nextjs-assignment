@@ -61,7 +61,7 @@ export default function Footer() {
             <Link
               href="https://github.com"
               target="_blank"
-              className="hover:text-gray-200"
+              className="hover:text-blue-400"
             >
               <FaGithub size={20} />
             </Link>
