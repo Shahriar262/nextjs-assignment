@@ -62,12 +62,13 @@ export default function HeroSection() {
         className="relative w-full h-[300px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg"
       >
         <Image
-          src="/banner1.jpg"
+          src="/banner2222.jpg"
           alt="TechHive IT Solutions"
           fill
           className="object-cover"
           priority
         />
+        <div className="absolute inset-0 bg-black/20" />
       </motion.div>
     </section>
   );

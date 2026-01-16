@@ -1,31 +1,45 @@
-"use client"; 
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import { usePathname } from "next/navigation";
-import { IoHome, IoLogIn, IoLogOut } from "react-icons/io5";
-import { AiFillProduct } from "react-icons/ai";
+import { usePathname, useRouter } from "next/navigation";
+import {
+  IoHomeOutline,
+  IoLogInOutline,
+  IoLogOutOutline,
+} from "react-icons/io5";
+import { AiOutlineProduct } from "react-icons/ai";
+import { useSession, signOut } from "next-auth/react";
+import { toast } from "react-toastify";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const pathname = usePathname();
+  const { data: session } = useSession();
 
-  // Check auth cookie
+  const router = useRouter();
+
   useEffect(() => {
-    const auth = document.cookie.includes("auth=true");
-    setIsLoggedIn(auth);
-  }, [pathname]);
+    const cookieAuth = document.cookie.includes("auth=true"); 
+    const googleAuth = !!session?.user; 
+    setIsLoggedIn(cookieAuth || googleAuth);
+  }, [pathname, session]);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const logout = () => {
+  const handleLogout = async () => {
+    // Remove mock login cookie
     document.cookie = "auth=; max-age=0; path=/";
+    // Sign out google session
+    await signOut({ redirect: false });
     setIsLoggedIn(false);
-    window.location.href = "/";
+    toast.success("Logged out successfully!", { autoClose: 2000 });
+    setTimeout(() => {
+      router.push("/");
+    }, 1200);
   };
 
   return (
@@ -33,32 +47,44 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-0 py-4 flex justify-between items-center">
         {/* Logo + Text */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo3.png" alt="Logo" width={32} height={32} className="w-6 h-6 md:w-8 md:h-8"/>
+          <Image
+            src="/logo3.png"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="w-6 h-6 md:w-8 md:h-8"
+          />
           <span className="font-bold text-xl text-gray-800">TechHive</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-gray-700 hover:text-blue-600 flex items-center gap-[6px]">
-           <IoHome /> Home
+          <Link
+            href="/"
+            className="text-gray-700 hover:text-blue-600 flex items-center gap-[6px]"
+          >
+            <IoHomeOutline /> Home
           </Link>
-          <Link href="/items" className="text-gray-700 hover:text-blue-600 flex items-center gap-[6px]">
-            <AiFillProduct /> Items
+          <Link
+            href="/items"
+            className="text-gray-700 hover:text-blue-600 flex items-center gap-[6px]"
+          >
+            <AiOutlineProduct className="text-[18px] md:text-[19px]" /> Items
           </Link>
 
           {isLoggedIn ? (
             <button
-              onClick={logout}
+              onClick={handleLogout}
               className="bg-blue-600 text-white px-4 py-1 cursor-pointer rounded hover:bg-blue-700 transition flex items-center gap-[6px]"
             >
-             <IoLogOut /> Logout
+              <IoLogOutOutline className="text-[18px] md:text-[19px]" /> Logout
             </button>
           ) : (
             <Link
               href="/login"
               className="bg-blue-600 text-white px-4 py-1 cursor-pointer rounded hover:bg-blue-700 transition flex items-center gap-[6px]"
             >
-             <IoLogIn /> Login
+              <IoLogInOutline className="text-[18px] md:text-[19px]" /> Login
             </Link>
           )}
         </div>
@@ -94,7 +120,7 @@ export default function Navbar() {
           </Link>
           {isLoggedIn ? (
             <button
-              onClick={logout}
+              onClick={handleLogout}
               className="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
               Logout
