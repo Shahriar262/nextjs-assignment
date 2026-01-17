@@ -32,7 +32,6 @@ TechHive/
 │   ├── ItemSkeleton.jsx
 │   └── sections/          # Landing page sections
 ├── public/
-│   ├── images/            # Product images
 │   └── data/items.json    # Product JSON data
 ├── .env                   # Environment variables
 └── README.md
