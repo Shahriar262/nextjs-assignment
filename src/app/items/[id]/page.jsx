@@ -42,7 +42,7 @@ export default async function ItemPage({ params }) {
               src={item.image}
               alt={item.name}
               fill
-              className="object-cover"
+              className="md:object-cover object-fill"
               priority
             />
           </div>
