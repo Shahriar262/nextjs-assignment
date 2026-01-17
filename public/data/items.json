@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "name": "High-Performance Laptop",
+    "description": "Powerful laptop for developers and designers with Intel i9, 32GB RAM, 1TB SSD.",
+    "price": 1500,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768632069/Lenovo-Legion-5-15.6-inch-QHD-Gaming-Laptop-price-in-Bangladesh-1_zvejby.png",
+    "brand": "TechHive",
+    "cpu": "Intel i9-12900H",
+    "ram": "32GB DDR5",
+    "storage": "1TB NVMe SSD",
+    "display": "15.6\" 4K OLED",
+    "graphics": "NVIDIA RTX 3080",
+    "os": "Windows 11 Pro",
+    "warranty": "2 Years",
+    "highlights": [
+      "Blazing fast performance",
+      "Professional-grade display",
+      "Optimized cooling system",
+      "Enterprise ready"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gaming Desktop PC",
+    "description": "Custom-built gaming desktop with RTX 4080, 64GB RAM, and liquid cooling.",
+    "price": 2800,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768631400/gaming_desktop_wrplw7.jpg",
+    "brand": "GameTech",
+    "cpu": "AMD Ryzen 9 7950X",
+    "ram": "64GB DDR5",
+    "storage": "2TB NVMe SSD + 4TB HDD",
+    "display": "27\" QHD 240Hz",
+    "graphics": "NVIDIA RTX 4080",
+    "os": "Windows 11 Pro",
+    "warranty": "3 Years",
+    "highlights": [
+      "Extreme gaming performance",
+      "Custom liquid cooling",
+      "High refresh rate monitor ready",
+      "Overclocked for pro gamers"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Wireless Mechanical Keyboard",
+    "description": "Ergonomic wireless mechanical keyboard with RGB backlight and programmable keys.",
+    "price": 120,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768631400/wareless_keyboard_l5it9t.jpg",
+    "brand": "KeyPro",
+    "switchType": "Mechanical Blue",
+    "connectivity": "Bluetooth + USB-C",
+    "battery": "40h rechargeable",
+    "warranty": "1 Year",
+    "highlights": [
+      "Tactile feedback",
+      "Customizable RGB",
+      "Multi-device pairing",
+      "Ergonomic design"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Precision Gaming Mouse",
+    "description": "High-DPI gaming mouse with customizable buttons and RGB lighting.",
+    "price": 80,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768632358/gaming_mouse3_egkx17.png",
+    "brand": "MouseTech",
+    "dpi": "16000 DPI",
+    "buttons": "8 programmable",
+    "sensor": "Optical",
+    "warranty": "1 Year",
+    "highlights": [
+      "Ultra-precise tracking",
+      "RGB customization",
+      "Ergonomic grip",
+      "Durable switches"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "4K Ultra-Wide Monitor",
+    "description": "Ultra-wide 34-inch monitor with HDR support, perfect for coding and content creation.",
+    "price": 550,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768632706/value-top-w34iruq-34-inch-wqhd-ips-ultra-wide-curved-monitor-1-500x500_sijpj2.jpg",
+    "brand": "DisplayPro",
+    "size": "34\"",
+    "resolution": "3440x1440",
+    "refreshRate": "144Hz",
+    "panel": "IPS",
+    "warranty": "2 Years",
+    "highlights": [
+      "Immersive ultra-wide display",
+      "HDR support",
+      "Professional color accuracy",
+      "Multiple ports (HDMI, DP, USB-C)"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Noise-Cancelling Headphones",
+    "description": "Professional over-ear headphones with active noise cancellation and premium sound.",
+    "price": 250,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768633638/406fdd3cc9e49e28002ad8baef9185c8_blwjq6.jpg",
+    "brand": "AudioMax",
+    "type": "Over-ear",
+    "connection": "Wireless + 3.5mm",
+    "battery": "30h",
+    "warranty": "1 Year",
+    "highlights": [
+      "Active noise cancellation",
+      "High-fidelity sound",
+      "Comfortable for long sessions",
+      "Foldable design"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Portable External SSD",
+    "description": "Fast 2TB external SSD for secure file storage and backup on the go.",
+    "price": 200,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768633743/portableSSDs-2048px-4757-3x2-1_gkyjid.jpg",
+    "brand": "StoragePro",
+    "capacity": "2TB",
+    "interface": "USB-C 3.2",
+    "speed": "1050MB/s",
+    "warranty": "3 Years",
+    "highlights": [
+      "Ultra-fast transfer speeds",
+      "Compact and portable",
+      "Durable build",
+      "Compatible with Mac & Windows"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Enterprise Cloud Server",
+    "description": "Scalable cloud server with 16 vCPUs, 64GB RAM, 2TB storage for business applications.",
+    "price": 500,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634025/storages-servers-image_wagpic.png",
+    "brand": "CloudPro",
+    "cpu": "16 vCPUs",
+    "ram": "64GB",
+    "storage": "2TB NVMe",
+    "os": "Linux Ubuntu 22.04",
+    "warranty": "2 Years",
+    "highlights": [
+      "Scalable infrastructure",
+      "Enterprise-grade reliability",
+      "Secure cloud storage",
+      "High availability"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Smart Home IoT Hub",
+    "description": "Control all your smart devices with this central IoT hub for home automation.",
+    "price": 150,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634247/Homey-Pro-1-2000x1125_rfmxkn.png",
+    "brand": "SmartHome",
+    "connectivity": "Wi-Fi + Zigbee + Z-Wave",
+    "compatibility": "Alexa, Google Home",
+    "warranty": "1 Year",
+    "highlights": [
+      "Centralized smart home control",
+      "Multi-protocol support",
+      "Secure connection",
+      "Easy setup"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Professional Drone",
+    "description": "High-end drone with 4K camera and GPS-assisted flight for aerial photography.",
+    "price": 1200,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634322/Inspire-2-Zenmuse-X5S_koztxh.jpg",
+    "brand": "DroneTech",
+    "camera": "4K UHD",
+    "flightTime": "35 mins",
+    "range": "5 km",
+    "gps": true,
+    "warranty": "1 Year",
+    "highlights": [
+      "4K aerial photography",
+      "Stabilized gimbal",
+      "GPS-assisted flight",
+      "Beginner & pro modes"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "4K Webcam",
+    "description": "High-resolution webcam for professional video calls and streaming.",
+    "price": 100,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634534/Aluratek-4K-HD-Webcam-Pro-5x-Digital-Zoom-Dual-Stereo-Noise-Cancelling-Mics-Main-min_ufhqgx.jpg",
+    "brand": "CamPro",
+    "resolution": "4K",
+    "fps": "60fps",
+    "connection": "USB-C",
+    "warranty": "1 Year",
+    "highlights": [
+      "Crystal clear video",
+      "Plug-and-play",
+      "Wide-angle lens",
+      "Professional streaming ready"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Wireless Router",
+    "description": "High-speed Wi-Fi 6 router for home and office networking with strong coverage.",
+    "price": 180,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634606/Tech_Brief_Router_white_48682d98-f68c-451f-910e-b3b15e33dec0_upgwf5.png",
+    "brand": "NetPro",
+    "standard": "Wi-Fi 6",
+    "speed": "Up to 3Gbps",
+    "coverage": "2500 sq.ft",
+    "ports": "4x LAN, 1x WAN",
+    "warranty": "2 Years",
+    "highlights": [
+      "Ultra-fast Wi-Fi",
+      "High coverage",
+      "Easy setup app",
+      "Parental controls"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Mechanical Laptop Stand",
+    "description": "Adjustable laptop stand for ergonomics and better cooling.",
+    "price": 45,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634674/OT155SL_01_Front_1000x_8b163ca3-344a-487a-afa2-5c8bd0adace7_pcrwj0.jpg",
+    "brand": "StandPro",
+    "material": "Aluminum",
+    "adjustable": "Height & angle",
+    "warranty": "1 Year",
+    "highlights": [
+      "Ergonomic design",
+      "Improved airflow",
+      "Portable & durable",
+      "Professional look"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Professional Graphics Tablet",
+    "description": "Tablet for designers with pressure-sensitive pen and customizable buttons.",
+    "price": 350,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768634900/dtk-1660-cintiq-16-1-500x500_suar1w.jpg",
+    "brand": "ArtPro",
+    "pen": "Pressure-sensitive",
+    "connectivity": "USB-C / Bluetooth",
+    "screen": "10.3\" LCD",
+    "warranty": "2 Years",
+    "highlights": [
+      "High precision drawing",
+      "Customizable buttons",
+      "Portable",
+      "For designers & artists"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Smartwatch Pro",
+    "description": "Fitness and productivity smartwatch with heart-rate monitoring and notifications.",
+    "price": 300,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768635126/CMF-by-Nothing-Watch-Pro-2-BT-calling-Smart-Watch-Dark-Gray-1622_ubxcuu.jpg",
+    "brand": "WatchPro",
+    "features": [
+      "Heart rate",
+      "Sleep tracking",
+      "Notifications",
+      "Fitness tracking"
+    ],
+    "battery": "48h",
+    "warranty": "1 Year",
+    "highlights": [
+      "Track health & fitness",
+      "Receive notifications",
+      "Sleek design",
+      "Water resistant"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Multi-Port USB Hub",
+    "description": "Expand your connectivity with a 10-in-1 USB-C hub for laptops and desktops.",
+    "price": 70,
+    "image": "https://res.cloudinary.com/dtxtatusv/image/upload/v1768635261/61KuIRIntYL_imgyg8.jpg",
+    "brand": "HubPro",
+    "ports": "10x USB-C / USB-A",
+    "powerDelivery": "Yes",
+    "warranty": "1 Year",
+    "highlights": [
+      "Expand connectivity",
+      "Portable",
+      "Supports fast charging",
+      "Durable build"
+    ]
+  }
+]

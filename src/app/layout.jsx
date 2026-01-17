@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NextJs Assignment",
+  title: "TechHive",
   description: "My first nextjs project",
 };
 
