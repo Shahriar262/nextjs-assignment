@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function CTASection() {
   return (
-    <section className="relative py-14 px-4 md:px-0">
+    <section className="relative py-5 md:py-14 px-4 md:px-0">
       {/* Gradient rounded container + blur wrapper */}
       <div className="relative max-w-7xl mx-auto rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 md:px-12 py-16 overflow-hidden">
         {/* Decorative blurred circles confined inside container */}

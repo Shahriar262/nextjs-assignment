@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -7,10 +8,20 @@ export default function Footer() {
   return (
     <footer className="bg-gray-800 text-gray-100">
       <div className="max-w-7xl mx-auto px-6 md:px-0 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* About */}
+        
         <div>
-          <h3 className="font-bold text-lg mb-4">About TechHive</h3>
-          <p className="text-gray-300 text-sm">
+          {/* Logo + Text */}
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo3.png"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="w-6 h-6 md:w-8 md:h-8"
+            />
+            <span className="font-bold text-xl">TechHive</span>
+          </Link>
+          <p className="text-gray-300 mt-4 text-sm">
             TechHive is an IT products showcase project built with Next.js and
             Tailwind CSS.
           </p>
@@ -54,21 +65,21 @@ export default function Footer() {
           <p className="text-gray-300 text-sm mb-2">Phone: +880 1234 567890</p>
           <div className="flex items-center gap-4 mt-2">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/1MqRviZHGz"
               target="_blank"
               className="hover:text-blue-500"
             >
               <FaFacebookF size={20} />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/shahriar-rahman-dev"
               target="_blank"
               className="hover:text-blue-400"
             >
               <FaLinkedinIn size={20} />
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/Shahriar262"
               target="_blank"
               className="hover:text-blue-400"
             >

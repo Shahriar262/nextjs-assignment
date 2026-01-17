@@ -17,8 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TechHive",
-  description: "My first nextjs project",
+  title: {
+    default: "TechHive",
+    template: "%s | TechHive",
+  },
+  description:
+    "TechHive is an IT products showcase project built with Next.js and Tailwind CSS",
 };
 
 export default function RootLayout({ children }) {

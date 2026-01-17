@@ -17,6 +17,15 @@ const fetchItemById = async (id) => {
   return items.find((item) => item.id === Number(id));
 };
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const item = await fetchItemById(id);
+
+  return {
+    title: item ? item.name : "Item Not Found",
+  };
+}
+
 export default async function ItemPage({ params }) {
   const { id } = await params;
   const item = await fetchItemById(id);

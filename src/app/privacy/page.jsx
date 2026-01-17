@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Privacy",
+  description:
+    "TechHive is an IT products showcase project built with Next.js and Tailwind CSS",
+};
+
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen py-26 px-4">

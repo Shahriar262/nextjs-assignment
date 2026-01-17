@@ -1,6 +1,13 @@
 import ContactForm from "@/components/form/ContactForm";
 
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "TechHive is an IT products showcase project built with Next.js and Tailwind CSS",
+};
+
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white py-24 px-4">

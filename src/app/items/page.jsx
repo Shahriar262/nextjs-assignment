@@ -1,5 +1,11 @@
 import ItemList from "@/components/ItemList";
 
+export const metadata = {
+  title: "Items",
+  description:
+    "TechHive is an IT products showcase project built with Next.js and Tailwind CSS",
+};
+
 export default function ItemsPage({}) {
   return (
     <main className="max-w-7xl mx-auto px-4 md:px-0 py-20 min-h-screen">

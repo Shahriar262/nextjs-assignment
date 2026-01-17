@@ -46,7 +46,7 @@ const cardVariants = {
 
 export default function CategoriesSection() {
   return (
-    <section className="mt-5 px-4 md:px-0">
+    <section className="mt-0 md:mt-5 px-4 md:px-0">
       {/* Section Header */}
       <motion.div
         className="text-center max-w-3xl mx-auto mb-12"

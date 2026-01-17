@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-0 pt-21 pb-[50px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="max-w-7xl mx-auto px-4 md:px-0 pt-8 md:pt-21 pb-0 md:pb-[50px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       {/* LEFT: TEXT */}
       <div>
         <motion.h1

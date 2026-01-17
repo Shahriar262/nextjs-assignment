@@ -50,7 +50,7 @@ export default function PopularItemsSection() {
   }, []);
 
   return (
-    <section className="py-20 mt-4 px-4 md:px-0">
+    <section className="py-20 mt-1 md:mt-4 px-4 md:px-0">
       {/* ===== Section Header ===== */}
       <motion.div
         className="max-w-4xl mx-auto text-center mb-12"
