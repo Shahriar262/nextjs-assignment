@@ -1,31 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaBox, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-
-const products = [
-  {
-    id: 1,
-    name: "Smart Server Rack",
-    category: "Infrastructure",
-  },
-  {
-    id: 2,
-    name: "Cloud Storage System",
-    category: "Cloud",
-  },
-  {
-    id: 3,
-    name: "Enterprise Router",
-    category: "Networking",
-  },
-  {
-    id: 4,
-    name: "AI Workstation Pro",
-    category: "Hardware",
-  },
-];
+import Image from "next/image";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -51,9 +30,28 @@ const cardVariants = {
 };
 
 export default function PopularItemsSection() {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        const res = await fetch("/data/items.json");
+        const data = await res.json();
+        setItems(data);
+      } catch (error) {
+        console.error("Failed to load items", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchItems();
+  }, []);
+
   return (
     <section className="py-20 mt-4 px-4 md:px-0">
-      {/* Section Header */}
+      {/* ===== Section Header ===== */}
       <motion.div
         className="max-w-4xl mx-auto text-center mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -69,7 +67,7 @@ export default function PopularItemsSection() {
         </p>
       </motion.div>
 
-      {/* Product Grid */}
+      {/* ===== Product Grid (ONLY 4 ITEMS) ===== */}
       <motion.div
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto"
         variants={containerVariants}
@@ -77,31 +75,39 @@ export default function PopularItemsSection() {
         whileInView="visible"
         viewport={{ once: false, margin: "-100px" }}
       >
-        {products.map((product) => (
-          <motion.div
-            key={product.id}
-            variants={cardVariants}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl cursor-pointer"
-          >
-            <div className="w-14 h-14 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4 text-2xl">
-              <FaBox />
-            </div>
+        {!loading &&
+          items.slice(0, 4).map((item) => (
+            <motion.div
+              key={item.id}
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+            >
+              <div className="relative w-full h-48">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-            <h3 className="text-lg font-semibold text-gray-900">
-              {product.name}
-            </h3>
-            <p className="mt-1 text-sm text-gray-500">{product.category}</p>
-
-            <div className="mt-4 text-blue-600 text-sm font-medium">
-              View Details →
-            </div>
-          </motion.div>
-        ))}
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-semibold text-lg">{item.name}</h3>
+                <p className="text-gray-600 mt-1 flex-1">{item.description}</p>
+                <p className="text-gray-800 font-medium mt-2">${item.price}</p>
+                <Link href={`/items/${item.id}`}>
+                  <div className="mt-4 text-blue-600 text-sm font-medium cursor-pointer">
+                    View Details →
+                  </div>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
       </motion.div>
 
-      {/* Show All Button */}
+      {/* ===== Show All Button ===== */}
       <motion.div
         className="mt-14 text-center"
         initial={{ opacity: 0, y: 20 }}
