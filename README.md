@@ -1,6 +1,6 @@
 # TechHive 🐝
 
-TechHive is a modern, recruiter-friendly, and fully responsive **Next.js 13** application showcasing professional tech products. Users can browse a curated product catalog, view detailed specifications, and optionally log in via Google authentication or mock credentials.
+TechHive is a modern, recruiter-friendly, and fully responsive **Next.js 16.1.3** application showcasing professional tech products. Users can browse a curated product catalog, view detailed specifications, and optionally log in via Google authentication or mock credentials.
 
 **Live Demo:** [https://nextjs-assignment-steel.vercel.app](https://nextjs-assignment-steel.vercel.app)
 
@@ -73,6 +73,16 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 💻 Tech Stack
+
+-   **Next.js 16.1.3 (App Router)**: React framework
+-   **React**: Front-end library
+-   **TailwindCSS**: Utility-first CSS
+-   **NextAuth.js**: Authentication (mock & Google)
+-   **Framer Motion**: Animations
+-   **React Icons**: UI icons
+-   **JSON**: Static product data source
 
 ## 📍 Route Summary
 
