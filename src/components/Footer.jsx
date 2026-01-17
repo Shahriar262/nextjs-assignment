@@ -21,18 +21,27 @@ export default function Footer() {
           <h3 className="font-bold text-lg mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
-              <Link href="/" className="hover:text-blue-400 transition">
-                Home
+              <Link
+                href="/about"
+                className="hover:text-blue-400 transition text-sm"
+              >
+                About
               </Link>
             </li>
             <li>
-              <Link href="/items" className="hover:text-blue-400 transition">
-                Items
+              <Link
+                href="/privacy"
+                className="hover:text-blue-400 transition text-sm"
+              >
+                Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/login" className="hover:text-blue-400 transition">
-                Login
+              <Link
+                href="/terms"
+                className="hover:text-blue-400 transition text-sm"
+              >
+                Terms of Service
               </Link>
             </li>
           </ul>

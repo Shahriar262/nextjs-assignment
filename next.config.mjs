@@ -4,7 +4,7 @@ const nextConfig = {
   reactCompiler: true,
   reactStrictMode: true,
   images: {
-    domains: ["res.cloudinary.com"], // Cloudinary hostname allow kora holo
+    domains: ["res.cloudinary.com"], 
   },
 };
 
